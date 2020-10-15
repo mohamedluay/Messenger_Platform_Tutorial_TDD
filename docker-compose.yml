@@ -8,9 +8,7 @@ services:
         env_file:
             - ./dev.env
         volumes:
-            - ./src:/app/src
-            - ./environments:/app/environments
-            - ./.gflow:/app/.gflow
+            - ./app.js:/app/app.js
         command: npm run serve
         ports:
             - '3000:3000'
@@ -24,13 +22,7 @@ services:
         environment:
             - TESTING=True
         volumes:
-            - ./src:/app/src
-            - ./environments:/app/environments
-            - ./.gflow:/app/.gflow
+            - ./app.js:/app/app.js
             - ./tests:/app/tests
             - ./constants:/app/constants
-            - ./facebook:/app/facebook
-            - ./utils:/app/utils
-            - ./nlp_engine:/app/nlp_engine
-            - ./app:/app/app
         command: npm run test --detectOpenHandles ##-- --watchAll
