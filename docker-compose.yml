@@ -1,36 +1,36 @@
-version: "3.7"
+version: '3.7'
 
 services:
-  dev:
-    build:
-      context: .
-      target: dev
-    env_file:
-      - ./dev.env
-    volumes:
-      - ./src:/app/src
-      - ./environments:/app/environments
-      - ./.gflow:/app/.gflow
-    command: npm run serve
-    ports:
-      - "3000:3000"
+    dev:
+        build:
+            context: .
+            target: dev
+        env_file:
+            - ./dev.env
+        volumes:
+            - ./src:/app/src
+            - ./environments:/app/environments
+            - ./.gflow:/app/.gflow
+        command: npm run serve
+        ports:
+            - '3000:3000'
 
-  test:
-    build:
-      context: .
-      target: dev
-    env_file:
-      - ./dev.env
-    environment:
-      - TESTING=True
-    volumes:
-      - ./src:/app/src
-      - ./environments:/app/environments
-      - ./.gflow:/app/.gflow
-      - ./tests:/app/tests
-      - ./constants:/app/constants
-      - ./facebook:/app/facebook
-      - ./utils:/app/utils
-      - ./nlp_engine:/app/nlp_engine
-      - ./app:/app/app
-    command: npm run test:docker --detectOpenHandles ##-- --watchAll
+    test:
+        build:
+            context: .
+            target: dev
+        env_file:
+            - ./dev.env
+        environment:
+            - TESTING=True
+        volumes:
+            - ./src:/app/src
+            - ./environments:/app/environments
+            - ./.gflow:/app/.gflow
+            - ./tests:/app/tests
+            - ./constants:/app/constants
+            - ./facebook:/app/facebook
+            - ./utils:/app/utils
+            - ./nlp_engine:/app/nlp_engine
+            - ./app:/app/app
+        command: npm run test --detectOpenHandles ##-- --watchAll
