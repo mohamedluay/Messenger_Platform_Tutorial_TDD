@@ -1,0 +1,11 @@
+{
+  "name": "messenger_platform_tutorial_tdd",
+  "version": "1.0.0",
+  "description": "Messenger platform tutorial using NodeJs",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
