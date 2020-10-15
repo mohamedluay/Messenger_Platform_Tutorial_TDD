@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-image_name="FBMessenger-nodejs-boilerplate"
+image_name="Messenger_Platform_Tutorial_TDD"
 
 function build_test {
     docker-compose up --build test

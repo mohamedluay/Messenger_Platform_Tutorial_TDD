@@ -6,7 +6,7 @@ services:
       context: .
       target: dev
     env_file:
-      - ./environments/development.env
+      - ./dev.env
     volumes:
       - ./src:/app/src
       - ./environments:/app/environments
@@ -20,7 +20,7 @@ services:
       context: .
       target: dev
     env_file:
-      - ./environments/development.env
+      - ./dev.env
     environment:
       - TESTING=True
     volumes:
