@@ -25,4 +25,4 @@ services:
             - ./app.js:/app/app.js
             - ./tests:/app/tests
             - ./constants:/app/constants
-        command: npm run test --detectOpenHandles ##-- --watchAll
+        command: npm run test ##-- --watchAll
