@@ -25,4 +25,5 @@ services:
             - ./app.js:/app/app.js
             - ./tests:/app/tests
             - ./constants:/app/constants
+            - ./managers:/app/managers
         command: npm run test ##-- --watchAll

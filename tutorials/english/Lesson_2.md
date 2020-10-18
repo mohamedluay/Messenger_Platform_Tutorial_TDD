@@ -57,11 +57,8 @@ webhook.post('/webhook', (req, res) => {
     if (object === 'page') {
         entry.forEach((entryEvent) => {
             try {
-                const {
-                    sender,
-                    recipient,
-                    timestamp,
-                } = entryEvent.messaging[0];
+                const webhookEvent = entryEvent.messaging[0];
+                const { sender, recipient, timestamp } = webhookEvent;
 
                 res.status(200).send('EVENT_RECEIVED');
             } catch (error) {

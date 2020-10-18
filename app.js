@@ -1,6 +1,7 @@
 const Express = require('express');
 const bodyParser = require('body-parser');
 const cors = require('cors');
+const { parseEvent } = require('./managers/webhookEventsManager');
 
 const webhook = new Express();
 webhook.use(cors());
@@ -30,17 +31,16 @@ webhook.get('/webhook', (req, res) => {
 });
 
 webhook.post('/webhook', (req, res) => {
+    // ToDo: Lesson 2
     const data = req.body;
     const { object, entry } = data;
     if (object === 'page') {
         entry.forEach((entryEvent) => {
             try {
-                const {
-                    sender,
-                    recipient,
-                    timestamp,
-                } = entryEvent.messaging[0];
-
+                const webhookEvent = entryEvent.messaging[0];
+                const { sender, recipient, timestamp } = webhookEvent;
+                // ToDo: Lesson 3
+                const parsedEvent = parseEvent(webhookEvent);
                 res.status(200).send('EVENT_RECEIVED');
             } catch (error) {
                 res.status(500).send();
