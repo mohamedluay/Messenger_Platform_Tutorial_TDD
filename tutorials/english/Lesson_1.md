@@ -83,11 +83,21 @@ webhook.get('/webhook', (req, res) => {
 });
 ```
 
-Keep writing until all tests pass for lesson_1, once it did pass then Hooray 🎉🥳, You have passed the first lesson 😉.
+Keep writing until all tests pass for lesson_1.
+
+<p align="center">
+  <img src="https://media.giphy.com/media/l0Iy88cWKqBeBN92o/giphy.gif" />
+</p>
 
 ```sh
 ./scripts/start_tutorial.sh lesson_1
 ```
+
+once it did pass then Hooray 🎉🥳, You have passed the first lesson 😉.
+
+<p align="center">
+  <img src="https://media.giphy.com/media/zCln43mMti1UI/giphy.gif" />
+</p>
 
 ## Citation
 

@@ -1,3 +1,25 @@
+# Lesson 3.4 - Webhook Events Appendix
+
+## In theory 📖
+
+This lesson will be a quick lesson where we will just do some sort of minor refactoring to the **webhookEventsManager.js** file, the refactor will touch these 2 minor points:
+
+-   We only handled 3 types of webhook events(message, postback and referral), since your webhook will still manage to receive other events, the webhook will respond with 200 without handling the coming request. Hence, we will throw a minor error instead to let the messenger platform know that we can't receive such event yet.
+-   Given the existence of some common attributes in each event (like sender id & timestamp), it would be better to group those into one central code so that we can easily add new attributes to it in the future.
+
+## Get Your Hands Dirty 👩‍💻
+
+```sh
+./scripts/start_tutorial.sh lesson_3_4
+```
+
+```javascript
+// ToDo: Lesson 3_4
+```
+
+I would suggest that you go do the refactor yourself and come back to check the final code for **webhookEventsManager** from here 👇
+
+```javascript
 const {
     WEBHOOK_EVENT_TYPES,
 } = require('../constants/messengerPlatformConstants');
@@ -61,3 +83,18 @@ const parseReferralEvent = (event) => {
 module.exports = {
     parseEvent,
 };
+```
+
+As a disclaimer, you are not required to do it exactly like I did here, if you are comfortable with what you wrote and it passes the test then that's more than enough.
+
+```sh
+./scripts/start_tutorial.sh lesson_3_4
+```
+
+At this point I must congratulate you for passing the mid milestone from this tutorial, what would you need only to complete your first chatbot is to know how to send messages to your users and you are all set 😉. Now, it's time for the usual dance 😁.
+
+<p align="center">
+  <img src="https://media.giphy.com/media/lMameLIF8voLu8HxWV/giphy.gif" />
+</p>
+
+## Next Lesson: [Lesson 4 - Messaging]()

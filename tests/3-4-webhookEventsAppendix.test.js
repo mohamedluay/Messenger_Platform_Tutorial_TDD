@@ -1,8 +1,25 @@
+const { parseEvent } = require('../managers/webhookEventsManager');
 const request = require('supertest');
 const app = require('../app');
 
-describe('2- Messaging event webhook (POST)', () => {
-    it('should respond with 200 when the sending object is page', async (done) => {
+describe('3.4 - Webhook Events Appendix', () => {
+    it('should throw error when no known event sent', () => {
+        const stubEvent = {
+            sender: {
+                id: '<PSID>',
+            },
+            recipient: {
+                id: '<PAGE_ID>',
+            },
+            timestamp: 1458692752478,
+        };
+
+        expect(() => {
+            parseEvent(stubEvent);
+        }).toThrowError(new Error('Unsupported Webhook Event Received'));
+    });
+
+    it('webhook should return 500 when no known event sent', async (done) => {
         const res = await request(app)
             .post('/webhook')
             .send({
@@ -20,23 +37,12 @@ describe('2- Messaging event webhook (POST)', () => {
                                     id: '<PAGE_ID>',
                                 },
                                 timestamp: 1458692752478,
-                                message: {
-                                    mid: 'mid.1457764197618:41d102a3e1ae206a38',
-                                    text: 'hello, world!',
-                                },
                             },
                         ],
                     },
                 ],
             });
-        expect(res.status).toBe(200);
-        expect(res.text).toBe('EVENT_RECEIVED');
-        done();
-    });
-
-    it('should respond with 404 when the sending object is not page', async (done) => {
-        const res = await request(app).post('/webhook').send({});
-        expect(res.status).toBe(404);
+        expect(res.status).toBe(500);
         done();
     });
 });
