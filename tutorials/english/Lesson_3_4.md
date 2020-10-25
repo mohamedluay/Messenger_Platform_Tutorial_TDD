@@ -97,4 +97,4 @@ At this point I must congratulate you for passing the mid milestone from this tu
   <img src="https://media.giphy.com/media/lMameLIF8voLu8HxWV/giphy.gif" />
 </p>
 
-## Next Lesson: [Lesson 4 - Messaging]()
+## Next Lesson: [Lesson 4 - Sending Messages]()
