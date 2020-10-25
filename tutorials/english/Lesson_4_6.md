@@ -124,4 +124,4 @@ Documentation Reference:
 -   [Generic Template](https://developers.facebook.com/docs/messenger-platform/send-messages/template/generic)
 -   [Generic Template Reference](https://developers.facebook.com/docs/messenger-platform/reference/templates/generic)
 
-## Next Lesson: [Lesson 4.6 - Sending Media Template]()
+## Next Lesson: [Lesson 4.7 - Sending Media Template](Lesson_4_7.md)

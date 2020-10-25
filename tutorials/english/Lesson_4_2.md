@@ -90,4 +90,4 @@ Documentation Reference:
 
 -   [Send Messages](https://developers.facebook.com/docs/messenger-platform/send-messages)
 
-## Next Lesson: [Lesson 4.3 - Sending Quick Replies]()
+## Next Lesson: [Lesson 4.3 - Sending Quick Replies](Lesson_4_3.md)

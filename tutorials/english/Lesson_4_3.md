@@ -140,4 +140,4 @@ Documentation Reference:
 
 -   [Quick Replies](https://developers.facebook.com/docs/messenger-platform/send-messages/quick-replies)
 
-## Next Lesson: [Lesson 4.4 - Sending Attachments]()
+## Next Lesson: [Lesson 4.4 - Sending Attachments](Lesson_4_4.md)

@@ -76,4 +76,4 @@ Documentation Reference:
 
 -   [Send Messages](https://developers.facebook.com/docs/messenger-platform/send-messages)
 
-## Next Lesson: [Lesson 4.5 - Sending Button Templates]()
+## Next Lesson: [Lesson 4.5 - Sending Button Templates](Lesson_4_5.md)

@@ -105,4 +105,4 @@ Documentation Reference:
 
 -   [Setting Up Your Webhook](https://developers.facebook.com/docs/messenger-platform/getting-started/webhook-setup)
 
-## Next Lesson: [Lesson 2 - Messaging Events Webhook 💬]()
+## Next Lesson: [Lesson 2 - Messaging Events Webhook 💬](Lesson_2.md)

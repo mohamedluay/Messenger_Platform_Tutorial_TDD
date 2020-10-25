@@ -77,4 +77,4 @@ Documentation Reference:
 
 -   [Sender Actions](https://developers.facebook.com/docs/messenger-platform/send-messages/sender-actions)
 
-## Next Lesson: [Lesson 4.2 - Sending Text Messages]()
+## Next Lesson: [Lesson 4.2 - Sending Text Messages](Lesson_4_2.md)

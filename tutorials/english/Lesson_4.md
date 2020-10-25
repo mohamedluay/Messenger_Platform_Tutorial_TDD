@@ -74,4 +74,4 @@ Documentation Reference:
 
 -   [Sending Messages](https://developers.facebook.com/docs/messenger-platform/send-messages)
 
-## Next Lesson: [Lesson 4.1 - Sending Sender Actions]()
+## Next Lesson: [Lesson 4.1 - Sending Sender Actions](Lesson_4_1.md)

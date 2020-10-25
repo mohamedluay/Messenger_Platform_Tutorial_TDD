@@ -83,4 +83,4 @@ Documentation Reference:
 
 -   [Setting Up Your Webhook](https://developers.facebook.com/docs/messenger-platform/getting-started/webhook-setup)
 
-## Next Lesson: [Lesson 3 - Parsing Messaging Events]()
+## Next Lesson: [Lesson 3 - Parsing Messaging Events](Lesson_3.md)

@@ -93,4 +93,4 @@ Documentation Reference:
 
 -   [Webhook Events](https://developers.facebook.com/docs/messenger-platform/webhook#events)
 
-## Next Lesson: [Lesson 3.1 - Parsing Message Event]()
+## Next Lesson: [Lesson 3.1 - Parsing Message Event](Lesson_3_1.md)

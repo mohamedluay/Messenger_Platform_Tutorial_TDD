@@ -161,4 +161,4 @@ Documentation Reference:
 
 -   [messages Webhook Event Reference](https://developers.facebook.com/docs/messenger-platform/reference/webhook-events/messages)
 
-## Next Lesson: [Lesson 3.2 - Parsing Postback Events]()
+## Next Lesson: [Lesson 3.2 - Parsing Postback Events](Lesson_3_2.md)

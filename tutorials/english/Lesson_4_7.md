@@ -94,4 +94,4 @@ Documentation Reference:
 -   [Media Template](https://developers.facebook.com/docs/messenger-platform/send-messages/template/media)
 -   [Media Template Reference](https://developers.facebook.com/docs/messenger-platform/reference/templates/media)
 
-## Next Lesson: [Lesson 4.8 - Sending Messages Appendix]()
+## Next Lesson: [Lesson 4.8 - Sending Messages Appendix](Lesson_4_8.md)

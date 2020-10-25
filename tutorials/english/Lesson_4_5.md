@@ -175,4 +175,4 @@ Documentation Reference:
 -   [Game Play Button](https://developers.facebook.com/docs/messenger-platform/reference/buttons/game-play)
 -   [White Listing Domains for web_url Buttons](https://developers.facebook.com/docs/messenger-platform/reference/messenger-profile-api/domain-whitelisting)
 
-## Next Lesson: [Lesson 4.6 - Sending Generic Template]()
+## Next Lesson: [Lesson 4.6 - Sending Generic Template](Lesson_4_6.md)

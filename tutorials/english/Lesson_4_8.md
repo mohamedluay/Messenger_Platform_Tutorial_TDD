@@ -22,4 +22,4 @@ Now before moving on the next lesson where you gonna build your first chatbot on
   <img src="https://media.giphy.com/media/Ll37bXYmQecEdBpmmM/giphy.gif" />
 </p>
 
-## Next Lesson: [Lesson 5 - Build your Super Echo Chatbot 💬🤖]()
+## Next Lesson: [Lesson 5 - Build your Super Echo Chatbot 💬🤖](Lesson_5.md)
