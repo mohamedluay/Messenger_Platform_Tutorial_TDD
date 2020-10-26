@@ -7,13 +7,6 @@ const {
 } = require('../constants/messengerPlatformConstants');
 const sendMessageThroughAPI = async (messageObject) => {
     // ToDo: Lesson_4
-    const response = await axios.post(SEND_URL, messageObject);
-    const { data } = response;
-    if (data.error)
-        throw new Error(
-            `Send API Request Failed ## Code (${data.error.code}) ##`
-        );
-    return;
 };
 
 const waitFor = async (seconds) => {
@@ -25,32 +18,14 @@ const isLastMessageInArray = (index, textMessagesArray) =>
 
 const sendMarkSeen = (userPSID) => {
     // ToDo: Lesson 4_1
-    sendMessageThroughAPI({
-        recipient: {
-            id: userPSID,
-        },
-        sender_action: 'mark_seen',
-    });
 };
 
 const sendTypingOn = (userPSID) => {
     // ToDo: Lesson 4_1
-    sendMessageThroughAPI({
-        recipient: {
-            id: userPSID,
-        },
-        sender_action: 'typing_on',
-    });
 };
 
 const sendTypingOff = (userPSID) => {
     // ToDo: Lesson 4_1
-    sendMessageThroughAPI({
-        recipient: {
-            id: userPSID,
-        },
-        sender_action: 'typing_off',
-    });
 };
 
 const sendTextMessage = async (
@@ -59,18 +34,7 @@ const sendTextMessage = async (
     { messagingType = MESSAGING_TYPES.RESPONSE, quickReplies } = {}
 ) => {
     // ToDo: Lesson 4_2
-    const messageObject = {
-        messaging_type: messagingType,
-        recipient: {
-            id: userPSID,
-        },
-        message: {
-            text: messageText,
-        },
-    };
     // ToDo: Lesson 4_3
-    if (quickReplies) messageObject.message.quick_replies = quickReplies;
-    return sendMessageThroughAPI(messageObject);
 };
 
 const sendMultipleTextMessages = async (
@@ -79,19 +43,6 @@ const sendMultipleTextMessages = async (
     { messagingType = MESSAGING_TYPES.RESPONSE, quickReplies } = {}
 ) => {
     // ToDo: Lesson 4_2
-    for (const [index, textMessage] of textMessagesArray.entries()) {
-        await sendTextMessage(userPSID, textMessage, {
-            messagingType,
-            quickReplies: isLastMessageInArray(index, textMessagesArray)
-                ? quickReplies
-                : undefined, // ToDo: Lesson 4_3
-        });
-        if (!isLastMessageInArray(index, textMessagesArray)) {
-            await sendTypingOn(userPSID);
-            const secondsToWait = textMessage.split(' ').length / 3;
-            await waitFor(secondsToWait);
-        }
-    }
 };
 
 const sendAttachment = (
@@ -102,23 +53,6 @@ const sendAttachment = (
     { messagingType = MESSAGING_TYPES.RESPONSE, quickReplies } = {}
 ) => {
     // ToDo: Lesson 4_4
-    const messageObject = {
-        messaging_type: messagingType,
-        recipient: {
-            id: userPSID,
-        },
-        message: {
-            attachment: {
-                type: attachmentType,
-                payload: {
-                    url,
-                    is_reusable: isReusable,
-                },
-            },
-        },
-    };
-    if (quickReplies) messageObject.message.quick_replies = quickReplies;
-    return sendMessageThroughAPI(messageObject);
 };
 
 const sendButtonsTemplate = (
@@ -128,23 +62,6 @@ const sendButtonsTemplate = (
     { messagingType = MESSAGING_TYPES.RESPONSE } = {}
 ) => {
     // ToDo: Lesson 4_5
-    const messageObject = {
-        messaging_type: messagingType,
-        recipient: {
-            id: userPSID,
-        },
-        message: {
-            attachment: {
-                type: 'template',
-                payload: {
-                    template_type: MESSAGE_TEMPLATE_TYPES.BUTTON,
-                    text: displayText,
-                    buttons: buttons,
-                },
-            },
-        },
-    };
-    return sendMessageThroughAPI(messageObject);
 };
 
 const sendGenericTemplate = (
@@ -153,24 +70,6 @@ const sendGenericTemplate = (
     { messagingType = MESSAGING_TYPES.RESPONSE, imageAspectRatio } = {}
 ) => {
     // ToDo: Lesson 4_6
-    const messageObject = {
-        messaging_type: messagingType,
-        recipient: {
-            id: userPSID,
-        },
-        message: {
-            attachment: {
-                type: 'template',
-                payload: {
-                    template_type: MESSAGE_TEMPLATE_TYPES.GENERIC,
-                    elements,
-                },
-            },
-        },
-    };
-    if (imageAspectRatio)
-        messageObject.message.payload.image_aspect_ratio = imageAspectRatio;
-    return sendMessageThroughAPI(messageObject);
 };
 
 const sendMediaTemplate = (
@@ -179,26 +78,6 @@ const sendMediaTemplate = (
     { messagingType = MESSAGING_TYPES.RESPONSE } = {}
 ) => {
     // ToDo: Lesson 4_7
-    const element = { media_type: mediaType };
-    if (!attachmentId) element.url = url;
-    else element.attachment_id = attachmentId;
-    if (buttons) element.buttons = buttons;
-    const messageObject = {
-        messaging_type: messagingType,
-        recipient: {
-            id: userPSID,
-        },
-        message: {
-            attachment: {
-                type: 'template',
-                payload: {
-                    template_type: MESSAGE_TEMPLATE_TYPES.MEDIA,
-                    elements: [element],
-                },
-            },
-        },
-    };
-    return sendMessageThroughAPI(messageObject);
 };
 
 module.exports = {

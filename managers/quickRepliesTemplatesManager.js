@@ -14,23 +14,11 @@ const buildTextualQuickReply = (
     title = required(),
     payload = required(),
     imageUrl
-) => {
-    const quickReplyObject = {
-        content_type: QUICK_REPLY_TYPES.TEXT,
-        title,
-        payload,
-    };
-    if (imageUrl) quickReplyObject.image_url = imageUrl;
-    return quickReplyObject;
-};
+) => {};
 
-const buildUserPhoneNumberQuickReply = () => ({
-    content_type: QUICK_REPLY_TYPES.USER_PHONE_NUMBER,
-});
+const buildUserPhoneNumberQuickReply = () => ({});
 
-const buildUserEmailQuickReply = () => ({
-    content_type: QUICK_REPLY_TYPES.USER_EMAIL,
-});
+const buildUserEmailQuickReply = () => ({});
 
 module.exports = {
     buildTextualQuickReply,
