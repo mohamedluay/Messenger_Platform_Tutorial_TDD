@@ -181,7 +181,20 @@ Now, we have made it to the last green check in this tutorial 👏, we have wrot
 ./scripts/start_tutorial.sh lesson_5
 ```
 
-And we are done with the whole tutorial and the the the technical part
+And we are done with the whole tutorial and the the the technical part 😁🕺.
+
+For the sense of achievement, I have made a command that runs all tests togetherL
+
+```sh
+./scripts/start_tutorial.sh all_lessons
+```
+
+<p align="center">
+  <img src="images/lesson_5_im1.png" />
+</p>
+
+If you reached it this far, please let me know by tweeting it [from here](https://twitter.com/intent/tweet?text=Hi%20@_mluay,%20I%20have%20completed%20the%20Messenger%20Platform%20Tutorial,%20check%20my%20tests%20%F0%9F%98%81%F0%9F%91%87) 🙏
+.
 
 We will have only one appendix lesson to go where I will be covering chatbots ux & usability practices and my experience after winning the MEA Bots for Messenger Challenge back in 2017.
 
