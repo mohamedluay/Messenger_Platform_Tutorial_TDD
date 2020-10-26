@@ -190,7 +190,7 @@ For the sense of achievement, I have made a command that runs all tests together
 ```
 
 <p align="center">
-  <img src="images/lesson_5_im1.png" />
+  <img src="https://github.com/mohamedluay/Messenger_Platform_Tutorial_TDD/blob/master/tutorials/english/images/lesson_5_im1.png" />
 </p>
 
 If you reached it this far, please let me know by tweeting it [from here](https://twitter.com/intent/tweet?text=Hi%20@_mluay,%20I%20have%20completed%20the%20Messenger%20Platform%20Tutorial,%20check%20my%20tests%20%F0%9F%98%81%F0%9F%91%87) 🙏

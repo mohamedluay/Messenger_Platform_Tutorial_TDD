@@ -4,7 +4,7 @@
 
 The messenger platform provide 3 types of sender actions that simulates the real messaging experience you see when chatting with others through messenger, these sender actions are:
 
-![image](images/lesson_4_1_im1.png)
+![image](https://github.com/mohamedluay/Messenger_Platform_Tutorial_TDD/blob/master/tutorials/english/images/lesson_4_1_im1.png)
 
 ## Get Your Hands Dirty 👩‍💻
 

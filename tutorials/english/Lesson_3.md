@@ -4,7 +4,7 @@
 
 By now you have already configured your facebook App, did your webhooks and ready to deal with different types of events received from the messenger platform. The messenger platform now supports various types of webhook events, from messaging, referrals, postbacks, to account linking and message deliveries. The image below from the official documentation show all the available events 👇.
 
-![image](images/lesson_3_im1.png)
+![image](https://github.com/mohamedluay/Messenger_Platform_Tutorial_TDD/blob/master/tutorials/english/images/lesson_3_im1.png)
 
 By now, most probably you will be asking yourself, should I implement all these events?!
 

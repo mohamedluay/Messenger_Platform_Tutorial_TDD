@@ -4,7 +4,7 @@
 
 Quick replies are ones of the most used, user friendly feature associated with sending messages in the messenger platform. It helps you provide users with quick responses to move on smoothly with your chatting experience. It supports textual titles as well as images, and you can use them to get person's location, email address, and phone number.
 
-![image](images/lesson_3_1_im1.png)
+![image](https://github.com/mohamedluay/Messenger_Platform_Tutorial_TDD/blob/master/tutorials/english/images/lesson_3_1_im1.png)
 
 **Sample JSON**
 

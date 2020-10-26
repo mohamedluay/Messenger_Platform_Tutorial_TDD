@@ -7,7 +7,7 @@ I know that this part was a little bit condensed and mechanical 😴, that's why
 1.  Covering all recipient cases.
 
 <p align="center">
-  <img src="images/lesson_4_8_im1.png" />
+  <img src="https://github.com/mohamedluay/Messenger_Platform_Tutorial_TDD/blob/master/tutorials/english/images/lesson_4_8_im1.png" />
 </p>
 
 2.  Using virtual personas to your thread ([reference](https://developers.facebook.com/docs/messenger-platform/send-messages/personas)).

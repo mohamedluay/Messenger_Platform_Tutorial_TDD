@@ -46,7 +46,7 @@ This test container is configured as a test environment that you can use to foll
 
 In a green state, it will look something like this 📸 👇
 
-![image](tutorials/english/images/Intro_im1.png)
+![image](tutorials/english/https://github.com/mohamedluay/Messenger_Platform_Tutorial_TDD/blob/master/tutorials/english/images/Intro_im1.png)
 
 ### VSCode Plugins
 

@@ -21,7 +21,7 @@ In this lesson, we will go over the available button elements, and use it with *
 -   **Log Out Button** The same flow as the Log In Button, however, it is used for account unlinking.
 -   **Game Play Button** Used to launch instant game that is associated with your facebook page.
 
-![image](images/lesson_4_5_im1.png)
+![image](https://github.com/mohamedluay/Messenger_Platform_Tutorial_TDD/blob/master/tutorials/english/images/lesson_4_5_im1.png)
 
 **Request Sample**
 

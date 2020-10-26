@@ -5,7 +5,7 @@
 Media template is a structured template the let you send an image or a video (like the image below 👇) with an optional button.
 
 <p align="center">
-  <img style="width: 600px;" src="images/lesson_4_7_im1.png" />
+  <img style="width: 600px;" src="https://github.com/mohamedluay/Messenger_Platform_Tutorial_TDD/blob/master/tutorials/english/images/lesson_4_7_im1.png" />
 </p>
 
 For the JSON object that you send to the messenger platform API, it will look like this 👇

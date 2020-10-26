@@ -28,7 +28,7 @@ Message webhook event will be the first to do here. In this lesson we will cover
 
 Don't be confused with the quick_reply property, we will get it covered in depth during the send message lessons, however, to give you some context, it is the message you get after the user clicks one of these buttons 👇
 
-![image](images/lesson_3_1_im1.png)
+![image](https://github.com/mohamedluay/Messenger_Platform_Tutorial_TDD/blob/master/tutorials/english/images/lesson_3_1_im1.png)
 
 hence if the user clicked **Small** in the left most image, your webhook will receive something like:
 
