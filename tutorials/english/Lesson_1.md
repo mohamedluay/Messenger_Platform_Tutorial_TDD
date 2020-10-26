@@ -36,20 +36,9 @@ Going into the practical side of things, first let's check the TDD red stage. Ru
 ./scripts/start_tutorial.sh lesson_1
 ```
 
-This command will run the tests for the first lesson (Verification Webhook), since that we have the function still to be empty, the test will fail with the following error message
+This command will run the tests for the first lesson (Verification Webhook), since that we have the function still to be empty, the test will fail and will look like this
 
-```sh
-  : Timeout - Async callback was not invoked within the 5000ms timeout specified by jest.setTimeout.Timeout - Async callback was not invoked within the 5000ms timeout specified by jest.setTimeout.Error:
-  .
-  .
-  .
-  Test Suites: 1 failed, 1 total
-test_1  | Tests:       2 failed, 2 total
-test_1  | Snapshots:   0 total
-test_1  | Time:        12.072s
-test_1  | Ran all test suites.
-test_1  | Jest did not exit one second after the test run has completed.
-```
+![image](https://github.com/mohamedluay/Messenger_Platform_Tutorial_TDD/blob/master/tutorials/english/images/Intro_im3.png)
 
 Now, lets start getting our hands dirty 👩‍💻, in your editor search for:
 

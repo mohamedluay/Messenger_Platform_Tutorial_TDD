@@ -2,7 +2,7 @@
 
 ## In theory 📖
 
-By now you have already configured your facebook App, did your webhooks and ready to deal with different types of events received from the messenger platform. The messenger platform now supports various types of webhook events, from messaging, referrals, postbacks, to account linking and message deliveries. The image below from the official documentation show all the available events 👇.
+By now you have already configured your facebook App(Maybe), did your webhooks and ready to deal with different types of events received from the messenger platform. The messenger platform now supports various types of webhook events, from messaging, referrals, postbacks, to account linking and message deliveries. The image below from the official documentation show all the available events 👇.
 
 ![image](https://github.com/mohamedluay/Messenger_Platform_Tutorial_TDD/blob/master/tutorials/english/images/lesson_3_im1.png)
 
@@ -18,7 +18,11 @@ The most commonly used one, it is the event responsible for receiving different 
 
 #### Messaging Postbacks
 
+You will receive this event when a user clicks a postback button, Get Started Button, or a persistent menu item. This event is ideal for shortcuts, taking quick inputs from users and as a conversation starter.
+
 #### Messaging Referrals
+
+This event will be fired when a user get referred to your chatbot (e.g following m.me links or from ads). It is best used when you want to quickly onboard people to your chatbot depending on an ad or a context they were in and refereed back to you.
 
 #### Messaging Account Linking
 
@@ -42,7 +46,7 @@ This event will fire ab echoed message event whenever your app sends a message t
 6.  Message Reads.
 7.  Standby.
 
-In this tutorial we will be mainly focusing on messages, postbacks, & referrals since they are the most commonly used events for the other events, we will be adding them gradually to the webhook events appendix lessons.
+In this tutorial we will be mainly focusing on messages, postbacks, & referrals since they are the most commonly used events. For the other events, you can add them as a bonus work from your side 😉.
 
 ## Get Your Hands Dirty 👩‍💻
 
