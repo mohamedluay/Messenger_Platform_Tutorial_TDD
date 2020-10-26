@@ -2,7 +2,8 @@ const Express = require('express');
 const bodyParser = require('body-parser');
 const cors = require('cors');
 const { parseEvent } = require('./managers/webhookEventsManager');
-
+const { respondToMessage } = require('./managers/responseHandlingManager');
+const { sendMarkSeen } = require('./managers/messageSendingManager');
 const webhook = new Express();
 webhook.use(cors());
 webhook.use(bodyParser.urlencoded({ extended: false }));
@@ -41,6 +42,8 @@ webhook.post('/webhook', (req, res) => {
                 const { sender, recipient, timestamp } = webhookEvent;
                 // ToDo: Lesson 3
                 const parsedEvent = parseEvent(webhookEvent);
+                // ToDo: Lesson 5
+                respondToMessage(parsedEvent);
                 res.status(200).send('EVENT_RECEIVED');
             } catch (error) {
                 res.status(500).send();

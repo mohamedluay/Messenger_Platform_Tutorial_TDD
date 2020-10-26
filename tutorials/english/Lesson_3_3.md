@@ -21,6 +21,14 @@ This event will be fired when any of the referral scenarios mentioned in the las
 }
 ```
 
+As we mentioned in the previous lesson, Referrals typically come from 5 different entries:
+
+-   Following an [m.me link with a referral parameter.](https://developers.facebook.com/docs/messenger-platform/referral-params)
+-   Clicking on a [Messenger Conversation Ad.](https://developers.facebook.com/docs/messenger-platform/guides/ads)
+-   Scanning a [parametric Messenger Code.](https://developers.facebook.com/docs/messenger-platform/messenger-code)
+-   Starting a conversation from the [Discover tab.](https://developers.facebook.com/docs/messenger-platform/discovery/discover-tab).
+-   Starting or resuming a conversation from the [customer chat plugin.](https://developers.facebook.com/docs/messenger-platform/discovery/customer-chat-plugin)
+
 ## Get Your Hands Dirty 👩‍💻
 
 <p align="center">
