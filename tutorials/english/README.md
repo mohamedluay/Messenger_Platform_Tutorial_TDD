@@ -28,7 +28,7 @@ In order for your chatbot to receive and send messages from users on your page, 
 The high level architecture of this whole operation can be summarized using this image 📸 👇
 
 <p align="center">
-  <a href="https://developers.facebook.com/docs/messenger-platform/introduction/"  target="_blank"><img src="images/Intro_im4.png" /></a>
+  <a href="https://developers.facebook.com/docs/messenger-platform/introduction/"  target="_blank"><img src="tutorials/english/images/Intro_im4.png" /></a>
 </p>
 
 The conversation life cycle starts when a user sends message to your chatbot, the message received in the platform's servers and delivered to you through the Webhooks you have implemented **_(Lesson_1 & Lesson_2)_**. In your webhooks, you will parse the webhook event **_(Lesson_3)_**, build your app logic **_(Lesson_5)_** , and then send the message back through the platform's API **_(Lesson_4)_**. Finally, the platform will deliver the messages to your user on your behalf.
@@ -51,15 +51,15 @@ In order to make it easier for you to run each lessons test and be super focused
 
 #### Red State
 
-![image](images/intro_im3.png)
+![image](tutorials/english/images/intro_im3.png)
 
 #### Green State
 
-![image](images/intro_im2.png)
+![image](tutorials/english/images/intro_im2.png)
 
 ### **1.5 Environment Variables**
 
-In the dev.env file, you will find 4 variables defined that the coded needs to run, these are:
+In the [dev.env](../../dev.env) file, you will find 4 variables defined that the coded needs to run, these are:
 
 ```
 WEBHOOK_PORT=3000
