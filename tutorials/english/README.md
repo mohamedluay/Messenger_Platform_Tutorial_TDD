@@ -51,7 +51,7 @@ In order to make it easier for you to run each lessons test and be super focused
 
 #### Red State
 
-![image](https://github.com/mohamedluay/Messenger_Platform_Tutorial_TDD/blob/master/tutorials/english/images/intro_im3.png)
+![image](https://github.com/mohamedluay/Messenger_Platform_Tutorial_TDD/blob/master/tutorials/english/images/Intro_im3.png)
 
 #### Green State
 
