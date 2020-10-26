@@ -25,7 +25,7 @@ The messenger platform utilizes different forms of messaging to provide builders
 We won't have that much coding in this lesson aside from discussing the send message API request anatomy and prepare the send function for future lessons.
 
 ```javascript
-// ToDo: Lesson 4
+// ToDo: Lesson_4
 ```
 
 For any type of message you send, you should use the following url to graph API. This url would contain the API version your chatbot is currently supporting, as well as the **page access token** that you have received while configuring your facebook APP.
@@ -49,7 +49,7 @@ In the meantime, look for **messageSendingManager.js** file, go to the **sendMes
 
 ```javascript
 const sendMessageThroughAPI = async (messageObject) => {
-    // ToDo: Lesson 4
+    // ToDo: Lesson_4
     const response = await axios.post(SEND_URL, messageObject);
     const { data } = response;
     if (data.error)

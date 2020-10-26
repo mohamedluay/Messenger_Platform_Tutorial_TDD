@@ -6,7 +6,7 @@ const {
     MEDIA_TYPES,
 } = require('../constants/messengerPlatformConstants');
 const sendMessageThroughAPI = async (messageObject) => {
-    // ToDo: Lesson 4
+    // ToDo: Lesson_4
     const response = await axios.post(SEND_URL, messageObject);
     const { data } = response;
     if (data.error)

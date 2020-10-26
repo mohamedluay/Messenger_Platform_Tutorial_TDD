@@ -10,7 +10,7 @@ webhook.use(bodyParser.urlencoded({ extended: false }));
 webhook.use(bodyParser.json());
 
 webhook.get('/webhook', (req, res) => {
-    // ToDo: Lesson 1
+    // ToDo: Lesson_1
     // Your verify token. Should be a random string.
     const VERIFY_TOKEN = process.env.MESSENGER_VERIFY_TOKEN;
     // Parse the query params
@@ -32,7 +32,7 @@ webhook.get('/webhook', (req, res) => {
 });
 
 webhook.post('/webhook', (req, res) => {
-    // ToDo: Lesson 2
+    // ToDo: Lesson_2
     const data = req.body;
     const { object, entry } = data;
     if (object === 'page') {
@@ -40,9 +40,9 @@ webhook.post('/webhook', (req, res) => {
             try {
                 const webhookEvent = entryEvent.messaging[0];
                 const { sender, recipient, timestamp } = webhookEvent;
-                // ToDo: Lesson 3
+                // ToDo: Lesson_3
                 const parsedEvent = parseEvent(webhookEvent);
-                // ToDo: Lesson 5
+                // ToDo: Lesson_5
                 respondToMessage(parsedEvent);
                 res.status(200).send('EVENT_RECEIVED');
             } catch (error) {

@@ -54,14 +54,14 @@ test_1  | Jest did not exit one second after the test run has completed.
 Now, lets start getting our hands dirty 👩‍💻, in your editor search for:
 
 ```javascript
-// ToDo: Lesson 1
+// ToDo: Lesson_1
 ```
 
 Start adding your code following the comments mentioned above, make sure that your code will end up something like this 👇
 
 ```javascript
 webhook.get('/webhook', (req, res) => {
-    // ToDo: Lesson 1
+    // ToDo: Lesson_1
     // Your verify token. Should be a random string.
     const VERIFY_TOKEN = process.env.MESSENGER_VERIFY_TOKEN;
     // Parse the query params

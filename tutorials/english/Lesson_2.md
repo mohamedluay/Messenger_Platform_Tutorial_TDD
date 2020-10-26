@@ -45,7 +45,7 @@ Going into the practical side of things, first let's check the TDD red stage. Ru
 As usual, the test should be now on the red stage and we will be going to make it green now. In your code editor, search for lesson 2 by typing the below keyword 👇.
 
 ```javascript
-// ToDo: Lesson 2
+// ToDo: Lesson_2
 ```
 
 Start adding your code following the comments mentioned above, make sure that your code will end up something like this 👇

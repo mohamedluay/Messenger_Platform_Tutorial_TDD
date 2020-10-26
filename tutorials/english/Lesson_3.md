@@ -16,6 +16,10 @@ The clear answer is no, they are all optional events, matter of fact you shouldn
 
 The most commonly used one, it is the event responsible for receiving different user messages and this is the one we will be focusing on in the next lesson from this tutorial.
 
+#### Messaging Postbacks
+
+#### Messaging Referrals
+
 #### Messaging Account Linking
 
 If you already have users and they are using your system/app and you want to identify them when using your chatbot, then this is the event you would be using for identifying and linking them to your main application.
@@ -28,23 +32,15 @@ This event will notify you if a specific message you have sent to your user has 
 
 This event will fire ab echoed message event whenever your app sends a message to a user. Typically, you don't need to use this event unless you are looking for a some sort of a handover or reporting scenario.
 
-#### Messaging Game Plays
+#### Other Events
 
-#### Messaging Handover
-
-#### Messaging Opt Ins
-
-#### Messaging Policy Enforcement
-
-#### Messaging Postbacks
-
-#### Message Reactions
-
-#### Message Reads
-
-#### Messaging Referrals
-
-#### Standby
+1.  Messaging Game Plays.
+2.  Messaging Handover.
+3.  Messaging Opt Ins.
+4.  Messaging Policy Enforcement.
+5.  Message Reactions.
+6.  Message Reads.
+7.  Standby
 
 In this tutorial we will be mainly focusing on messages, postbacks, & referrals since they are the most commonly used events for the other events, we will be adding them gradually to the webhook events appendix lessons.
 
@@ -55,13 +51,13 @@ There is no Major work to be done in this lesson as we will be covering differen
 Now, search for the usual todo comment, for this lesson, it will be
 
 ```javascript
-// ToDo: Lesson 3
+// ToDo: Lesson_3
 ```
 
 Then invoke the parsing function from **webhookEventsManager.js** with the webhook event that you want to parse. With this updates, the webhook function now should be looking like this 👇
 
 ```javascript
-// ToDo: Lesson 2
+// ToDo: Lesson_2
 const data = req.body;
 const { object, entry } = data;
 if (object === 'page') {
@@ -69,7 +65,7 @@ if (object === 'page') {
         try {
             const webhookEvent = entryEvent.messaging[0];
             const { sender, recipient, timestamp } = webhookEvent;
-            // ToDo: Lesson 3
+            // ToDo: Lesson_3
             const parsedEvent = parseEvent(webhookEvent);
             res.status(200).send('EVENT_RECEIVED');
         } catch (error) {

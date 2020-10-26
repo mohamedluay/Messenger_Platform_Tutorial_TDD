@@ -152,7 +152,7 @@ The last step would be invoking this **respondToMessage** function from the webh
 
 ```javascript
 webhook.post('/webhook', (req, res) => {
-    // ToDo: Lesson 2
+    // ToDo: Lesson_2
     const data = req.body;
     const { object, entry } = data;
     if (object === 'page') {
@@ -160,9 +160,9 @@ webhook.post('/webhook', (req, res) => {
             try {
                 const webhookEvent = entryEvent.messaging[0];
                 const { sender, recipient, timestamp } = webhookEvent;
-                // ToDo: Lesson 3
+                // ToDo: Lesson_3
                 const parsedEvent = parseEvent(webhookEvent);
-                // ToDo: Lesson 5
+                // ToDo: Lesson_5
                 respondToMessage(parsedEvent);
                 res.status(200).send('EVENT_RECEIVED');
             } catch (error) {
