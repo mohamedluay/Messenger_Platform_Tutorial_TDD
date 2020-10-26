@@ -118,7 +118,7 @@ Well first of all congratulations 👏, congratulation for you for completing th
   <img src="https://media.giphy.com/media/87NS05bya11mg/giphy.gif" />
 </p>
 
-I highly recommend try building a side project above the messenger platform, from an experience, it will great 😉. The reason why I am saying is due to:
+I highly recommend try building a side project above the messenger platform, from an experience, it will be great 😉. The reason why I am saying this is due to:
 
 1.  Plug & play platform, you don't need that much resources or learnings in order to do outstanding results.
 2.  Your potential users are already there, everyone one is using messenger right now and it is easy to get them trying the chatbot than downloading an app.
