@@ -196,8 +196,6 @@ For the sense of achievement, I have made a command that runs all tests together
 If you reached it this far, please let me know by tweeting it [from here](https://twitter.com/intent/tweet?text=Hi%20@_mluay,%20I%20have%20completed%20the%20Messenger%20Platform%20Tutorial,%20check%20my%20tests%20%F0%9F%98%81%F0%9F%91%87) 🙏
 .
 
-We will have only one appendix lesson to go where I will be covering chatbots ux & usability practices and my experience after winning the MEA Bots for Messenger Challenge back in 2017.
-
 <p align="center">
   <img src="https://media.giphy.com/media/vmon3eAOp1WfK/giphy.gif" />
 </p>
