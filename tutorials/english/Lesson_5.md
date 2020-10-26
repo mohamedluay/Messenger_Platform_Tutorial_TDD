@@ -209,3 +209,5 @@ Documentation Reference:
 -   [Using m.me Links](https://developers.facebook.com/docs/messenger-platform/discovery/m-me-links/)
 
 ## Next Lesson: [Appendix - Conversational UX](Lesson_A.md)
+
+[<img src="https://img.shields.io/badge/@_mluay%20-%231DA1F2.svg?&style=for-the-badge&logo=Twitter&logoColor=white"/>](https://twitter.com/_mluay)

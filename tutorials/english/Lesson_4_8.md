@@ -23,3 +23,5 @@ Now before moving on the next lesson where you gonna build your first chatbot on
 </p>
 
 ## Next Lesson: [Lesson 5 - Build your Super Echo Chatbot 💬🤖](Lesson_5.md)
+
+[<img src="https://img.shields.io/badge/@_mluay%20-%231DA1F2.svg?&style=for-the-badge&logo=Twitter&logoColor=white"/>](https://twitter.com/_mluay)

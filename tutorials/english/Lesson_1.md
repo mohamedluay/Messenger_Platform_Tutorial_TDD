@@ -106,3 +106,5 @@ Documentation Reference:
 -   [Setting Up Your Webhook](https://developers.facebook.com/docs/messenger-platform/getting-started/webhook-setup)
 
 ## Next Lesson: [Lesson 2 - Messaging Events Webhook 💬](Lesson_2.md)
+
+[<img src="https://img.shields.io/badge/@_mluay%20-%231DA1F2.svg?&style=for-the-badge&logo=Twitter&logoColor=white"/>](https://twitter.com/_mluay)

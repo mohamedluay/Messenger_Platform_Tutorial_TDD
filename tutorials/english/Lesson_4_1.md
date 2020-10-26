@@ -78,3 +78,5 @@ Documentation Reference:
 -   [Sender Actions](https://developers.facebook.com/docs/messenger-platform/send-messages/sender-actions)
 
 ## Next Lesson: [Lesson 4.2 - Sending Text Messages](Lesson_4_2.md)
+
+[<img src="https://img.shields.io/badge/@_mluay%20-%231DA1F2.svg?&style=for-the-badge&logo=Twitter&logoColor=white"/>](https://twitter.com/_mluay)

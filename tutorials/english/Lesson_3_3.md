@@ -82,3 +82,5 @@ Documentation Reference:
 -   [messages Webhook Event Reference](https://developers.facebook.com/docs/messenger-platform/reference/webhook-events/messaging_referrals)
 
 ## Next Lesson: [Lesson 3.4 - Webhook Events Appendix](Lesson_3_4.md)
+
+[<img src="https://img.shields.io/badge/@_mluay%20-%231DA1F2.svg?&style=for-the-badge&logo=Twitter&logoColor=white"/>](https://twitter.com/_mluay)

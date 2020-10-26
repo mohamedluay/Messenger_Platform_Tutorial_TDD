@@ -98,3 +98,5 @@ At this point I must congratulate you for passing the mid milestone from this tu
 </p>
 
 ## Next Lesson: [Lesson 4 - Sending Messages](Lesson_4.md)
+
+[<img src="https://img.shields.io/badge/@_mluay%20-%231DA1F2.svg?&style=for-the-badge&logo=Twitter&logoColor=white"/>](https://twitter.com/_mluay)

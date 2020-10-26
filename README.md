@@ -58,3 +58,5 @@ I am using VSCode as the main code editor, hence I have been using some plugins 
 4.  [CodeMetrics](https://marketplace.visualstudio.com/items?itemName=kisstkondoros.vscode-codemetrics)
 
 ### [Start Tutorial (In English)](tutorials/english/README.md)
+
+[<img src="https://img.shields.io/badge/@_mluay%20-%231DA1F2.svg?&style=for-the-badge&logo=Twitter&logoColor=white"/>](https://twitter.com/_mluay)

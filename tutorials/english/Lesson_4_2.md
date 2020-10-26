@@ -91,3 +91,5 @@ Documentation Reference:
 -   [Send Messages](https://developers.facebook.com/docs/messenger-platform/send-messages)
 
 ## Next Lesson: [Lesson 4.3 - Sending Quick Replies](Lesson_4_3.md)
+
+[<img src="https://img.shields.io/badge/@_mluay%20-%231DA1F2.svg?&style=for-the-badge&logo=Twitter&logoColor=white"/>](https://twitter.com/_mluay)

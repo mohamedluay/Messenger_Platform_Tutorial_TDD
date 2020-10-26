@@ -162,3 +162,5 @@ Documentation Reference:
 -   [messages Webhook Event Reference](https://developers.facebook.com/docs/messenger-platform/reference/webhook-events/messages)
 
 ## Next Lesson: [Lesson 3.2 - Parsing Postback Events](Lesson_3_2.md)
+
+[<img src="https://img.shields.io/badge/@_mluay%20-%231DA1F2.svg?&style=for-the-badge&logo=Twitter&logoColor=white"/>](https://twitter.com/_mluay)

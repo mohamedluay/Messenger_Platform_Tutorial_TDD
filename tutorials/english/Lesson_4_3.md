@@ -141,3 +141,5 @@ Documentation Reference:
 -   [Quick Replies](https://developers.facebook.com/docs/messenger-platform/send-messages/quick-replies)
 
 ## Next Lesson: [Lesson 4.4 - Sending Attachments](Lesson_4_4.md)
+
+[<img src="https://img.shields.io/badge/@_mluay%20-%231DA1F2.svg?&style=for-the-badge&logo=Twitter&logoColor=white"/>](https://twitter.com/_mluay)

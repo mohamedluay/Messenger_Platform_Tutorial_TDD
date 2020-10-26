@@ -125,3 +125,5 @@ Documentation Reference:
 -   [Generic Template Reference](https://developers.facebook.com/docs/messenger-platform/reference/templates/generic)
 
 ## Next Lesson: [Lesson 4.7 - Sending Media Template](Lesson_4_7.md)
+
+[<img src="https://img.shields.io/badge/@_mluay%20-%231DA1F2.svg?&style=for-the-badge&logo=Twitter&logoColor=white"/>](https://twitter.com/_mluay)

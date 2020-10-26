@@ -95,3 +95,5 @@ Documentation Reference:
 -   [Media Template Reference](https://developers.facebook.com/docs/messenger-platform/reference/templates/media)
 
 ## Next Lesson: [Lesson 4.8 - Sending Messages Appendix](Lesson_4_8.md)
+
+[<img src="https://img.shields.io/badge/@_mluay%20-%231DA1F2.svg?&style=for-the-badge&logo=Twitter&logoColor=white"/>](https://twitter.com/_mluay)
