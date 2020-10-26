@@ -126,7 +126,9 @@ I highly recommend try building a side project above the messenger platform, fro
 
 My first tinkering with the messenger platform was back to 2016-2017, I participated in 2017 MEA Bots for messenger challenge, luckily enough I have Won the first place by then, and hence a series of fortunate events started happening from knowing awesome people to attending F8 in person. That's why I am a little bit personally attached to this platform.
 
-![image](https://github.com/mohamedluay/Messenger_Platform_Tutorial_TDD/blob/master/tutorials/english/images/Intro_im5.JPG)
+<p align="center">
+  <img src="https://github.com/mohamedluay/Messenger_Platform_Tutorial_TDD/blob/master/tutorials/english/images/Intro_im5.JPG" />
+</p>
 
 Wish you all the best, if you have any questions or needed to catch up, you can do so using twitter from here 👇.
 
