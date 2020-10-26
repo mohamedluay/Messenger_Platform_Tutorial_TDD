@@ -1,4 +1,4 @@
-# Messenger_Platform_Tutorial_TDD
+# Messenger Platform Tutorial (TDD Approach)
 
 Welcome to this tutorial made for the [Developer Circle Community Challenge 2020](https://developercircles2020.devpost.com). This tutorial was built using the concepts of TDD ([Test Driven Development](https://www.infoq.com/articles/test-driven-design-java/)), where I have prepared all the tests for you so that you can have each lesson in the **Red State**🔴. In each lesson, you are job will be turning these red states one by one into green ones, hence, complete the tutorial.
 
