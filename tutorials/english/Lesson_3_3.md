@@ -72,7 +72,7 @@ AS mentioned in the pervious lesson, I used the referral key for this event with
 ```
 
 <p align="center">
-  <img src="https://media.giphy.com/media/fwQ2LSNYusDoTv3Pe6/giphy.gif" />
+  <img src="https://media.giphy.com/media/1TJB4TPjtaEJq/giphy.gif" />
 </p>
 
 ## Citation

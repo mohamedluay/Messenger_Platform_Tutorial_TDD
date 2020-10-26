@@ -71,6 +71,7 @@ if (object === 'page') {
             const { sender, recipient, timestamp } = webhookEvent;
             // ToDo: Lesson_3
             const parsedEvent = parseEvent(webhookEvent);
+            // ToDo: Lesson_5
             res.status(200).send('EVENT_RECEIVED');
         } catch (error) {
             res.status(500).send();

@@ -19,8 +19,7 @@ Message webhook event will be the first to do here. In this lesson we will cover
         "mid": "mid.1457764197618:41d102a3e1ae206a38",
         "text": "hello, world!",
         "quick_reply": {
-            // quick_reply is optional, only messages coming from quick_reply button click with have this one
-            "payload": "<DEVELOPER_DEFINED_PAYLOAD>" // Tip: You can serialize this payload to hold different parameters
+            "payload": "<DEVELOPER_DEFINED_PAYLOAD>"
         }
     }
 }
@@ -38,7 +37,7 @@ hence if the user clicked **Small** in the left most image, your webhook will re
         "mid": "mid.1457764197618:41d102a3e1ae206a38",
         "text": "Small",
         "quick_reply": {
-            "payload": "hat_size-sm" // this is just an example of how you can define this payload
+            "payload": "hat_size-sm"
         }
     }
 }

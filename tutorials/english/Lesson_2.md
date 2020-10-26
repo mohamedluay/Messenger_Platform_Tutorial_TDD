@@ -59,7 +59,8 @@ webhook.post('/webhook', (req, res) => {
             try {
                 const webhookEvent = entryEvent.messaging[0];
                 const { sender, recipient, timestamp } = webhookEvent;
-
+                // ToDo: Lesson_3
+                // ToDo: Lesson_5
                 res.status(200).send('EVENT_RECEIVED');
             } catch (error) {
                 res.status(500).send();
