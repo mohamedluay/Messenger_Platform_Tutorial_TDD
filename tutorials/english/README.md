@@ -10,7 +10,7 @@
     - [1.5 Environment Variables](#15-environment-variables)
     - [1.6 Setup your Facebook App](#16-setup-your-facebook-app)
 2. [Tutorial Lessons](#2-usage-guide)
-3. [All tests went green, what's Next⁉️](#2-usage-guide)
+3. [All tests went green, what's Next⁉️](#3-all-tests-went-green-whats-next)
 
 ## 1. Introduction
 
@@ -109,5 +109,25 @@ Never the less, you will still need to do this step when you start publishing yo
     -   [Lesson 4.7 - Sending Media Template](Lesson_4_7.md)
     -   [Lesson 4.8 - Sending Messages Appendix](Lesson_4_8.md)
 -   [Lesson 5 - Build your Super Echo Chatbot 💬🤖](Lesson_5.md)
+
+## 3. All tests went green, what's Next⁉️
+
+Well first of all congratulations 👏, congratulation for you for completing this tutorial and being ready to build your first chatbot. Another congratulation for me for having another one completed my first written online tutorials 😁, hence, a deserved cheers for both of us.
+
+<p align="center">
+  <img src="https://media.giphy.com/media/87NS05bya11mg/giphy.gif" />
+</p>
+
+I highly recommend try building a side project above the messenger platform, from an experience, it will great 😉. The reason why I am saying is due to:
+
+1.  Plug & play platform, you don't need that much resources or learnings in order to do outstanding results.
+2.  Your potential users are already there, everyone one is using messenger right now and it is easy to get them trying the chatbot than downloading an app.
+3.  You will learn more about product management and see how each user interacts with your little alien 👽.
+
+My first tinkering with the messenger platform was back to 2016-2017, I participated in 2017 MEA Bots for messenger challenge, luckily enough I have Won the first place by then, and hence a series of fortunate events started happening from knowing awesome people to attending F8 in person. That's why I am a little bit personally attached to this platform.
+
+![image](https://github.com/mohamedluay/Messenger_Platform_Tutorial_TDD/blob/master/tutorials/english/images/Intro_im5.JPG)
+
+Wish you all the best, if you have any questions or needed to catch up, you can do so using twitter from here 👇.
 
 [<img src="https://img.shields.io/badge/@_mluay%20-%231DA1F2.svg?&style=for-the-badge&logo=Twitter&logoColor=white"/>](https://twitter.com/_mluay)
