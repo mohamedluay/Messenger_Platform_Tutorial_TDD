@@ -40,3 +40,5 @@ Recommended Installation!
     -   [Lesson 4.7 - Sending Media Template](Lesson_4_7.md)
     -   [Lesson 4.8 - Sending Messages Appendix](Lesson_4_8.md)
 -   [Lesson 5 - Build your Super Echo Chatbot 💬🤖](Lesson_5.md)
+
+[<img src="https://img.shields.io/badge/@_mluay%20-%231DA1F2.svg?&style=for-the-badge&logo=Twitter&logoColor=white"/>](https://twitter.com/_mluay)
