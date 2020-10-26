@@ -40,7 +40,7 @@ This event will fire ab echoed message event whenever your app sends a message t
 4.  Messaging Policy Enforcement.
 5.  Message Reactions.
 6.  Message Reads.
-7.  Standby
+7.  Standby.
 
 In this tutorial we will be mainly focusing on messages, postbacks, & referrals since they are the most commonly used events for the other events, we will be adding them gradually to the webhook events appendix lessons.
 
