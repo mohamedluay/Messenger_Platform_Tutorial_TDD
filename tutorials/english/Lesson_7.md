@@ -31,13 +31,13 @@ Entity: An entity is anything that modifies an intent. Using the same example ea
 First of all let's setup our project within Wit.ai
 
 <p align="center">
-  <img src="https://github.com/mohamedluay/Messenger_Platform_Tutorial_TDD/blob/master/tutorials/english/images/lesson_7_im2.png" />
+  <img src="https://github.com/mohamedluay/Messenger_Platform_Tutorial_TDD/blob/master/tutorials/english/images/Lesson_7_im2.png" />
 </p>
 
 Click on the **+ New App** button and start filling your App's details
 
 <p align="center">
-  <img src="https://github.com/mohamedluay/Messenger_Platform_Tutorial_TDD/blob/master/tutorials/english/images/lesson_7_im3.png" />
+  <img src="https://github.com/mohamedluay/Messenger_Platform_Tutorial_TDD/blob/master/tutorials/english/images/Lesson_7_im3.png" />
 </p>
 
 Now, let's get our hand dirty and start giving the app some possible utterances and define some intents and entities to these utterances.
@@ -45,7 +45,7 @@ Now, let's get our hand dirty and start giving the app some possible utterances 
 For example, enter the following utterance in the designated field **"book table for 4 tomorrow 3 pm"**
 
 <p align="center">
-  <img src="https://github.com/mohamedluay/Messenger_Platform_Tutorial_TDD/blob/master/tutorials/english/images/lesson_7_im5.png" />
+  <img src="https://github.com/mohamedluay/Messenger_Platform_Tutorial_TDD/blob/master/tutorials/english/images/Lesson_7_im5.png" />
 </p>
 
 You will find that wit automatically detected **tomorrow 3 pm** as a datetime entity, that is because datetime is one of the generically supported entities in the platform, however, we will give this utterance an intent name, e.g **bookTable**. Then click Train and Validate Button.
@@ -53,21 +53,21 @@ You will find that wit automatically detected **tomorrow 3 pm** as a datetime en
 Now let's try writing something like **"I want to book a table today 10 pm"**, you can use the same intent that we have created earlier to map it to this utterance as well.
 
 <p align="center">
-  <img src="https://github.com/mohamedluay/Messenger_Platform_Tutorial_TDD/blob/master/tutorials/english/images/lesson_7_im6.png" />
+  <img src="https://github.com/mohamedluay/Messenger_Platform_Tutorial_TDD/blob/master/tutorials/english/images/Lesson_7_im6.png" />
 </p>
 
 What about defining our first entity now, let's say that the restaurant provide 1 of 3 course types upon booking (seafood, chicken, or beef), hence I would create an intent named **selectMenuCourse** and assign those 3 values as a new entity called **courseType**
 
 <p align="center">
-  <img src="https://github.com/mohamedluay/Messenger_Platform_Tutorial_TDD/blob/master/tutorials/english/images/lesson_7_im7.png" />
+  <img src="https://github.com/mohamedluay/Messenger_Platform_Tutorial_TDD/blob/master/tutorials/english/images/Lesson_7_im7.png" />
 </p>
 
 <p align="center">
-  <img src="https://github.com/mohamedluay/Messenger_Platform_Tutorial_TDD/blob/master/tutorials/english/images/lesson_7_im8.png" />
+  <img src="https://github.com/mohamedluay/Messenger_Platform_Tutorial_TDD/blob/master/tutorials/english/images/Lesson_7_im8.png" />
 </p>
 
 <p align="center">
-  <img src="https://github.com/mohamedluay/Messenger_Platform_Tutorial_TDD/blob/master/tutorials/english/images/lesson_7_im9.png" />
+  <img src="https://github.com/mohamedluay/Messenger_Platform_Tutorial_TDD/blob/master/tutorials/english/images/Lesson_7_im9.png" />
 </p>
 
 Now let's explore what we have done through the management menu on the left hand side of wit.ai dashboard.
@@ -75,19 +75,19 @@ Now let's explore what we have done through the management menu on the left hand
 **Intents We Have Defined**
 
 <p align="center">
-  <img src="https://github.com/mohamedluay/Messenger_Platform_Tutorial_TDD/blob/master/tutorials/english/images/lesson_7_im10.png" />
+  <img src="https://github.com/mohamedluay/Messenger_Platform_Tutorial_TDD/blob/master/tutorials/english/images/Lesson_7_im10.png" />
 </p>
 
 **Course Type Entity**
 
 <p align="center">
-  <img src="https://github.com/mohamedluay/Messenger_Platform_Tutorial_TDD/blob/master/tutorials/english/images/lesson_7_im12.png" />
+  <img src="https://github.com/mohamedluay/Messenger_Platform_Tutorial_TDD/blob/master/tutorials/english/images/Lesson_7_im12.png" />
 </p>
 
 **Utterances Trained**
 
 <p align="center">
-  <img src="https://github.com/mohamedluay/Messenger_Platform_Tutorial_TDD/blob/master/tutorials/english/images/lesson_7_im13.png" />
+  <img src="https://github.com/mohamedluay/Messenger_Platform_Tutorial_TDD/blob/master/tutorials/english/images/Lesson_7_im13.png" />
 </p>
 
 As simple as this, we can define all the intents, entities and traits that our chatbot would support. Then you would receive all these info side by side with the webhook events that you chatbot handles as we have illustrated in the previous lesson. This implicit integration between the messenger platform and Wit.ai will save you both Complexity and latency of handling or requesting similar APIs within your code, as the messenger platform will provide it to you in a nutshell 😎.
