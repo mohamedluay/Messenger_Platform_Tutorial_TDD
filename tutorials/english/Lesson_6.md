@@ -95,23 +95,7 @@ The second thing we will do in this function is sending 2 sender actions:
 With all that being said, this function should look like this 👇
 
 ```javascript
-const respondToMessage = (parsedEvent) => {
-    // * Send mark_seen to indicate that the message was received by the chatbot
-    sendMarkSeen(parsedEvent.userPSID);
-    // * Send typing_on to indicate that the reply is being processed and will be sent shortly
-    sendTypingOn(parsedEvent.userPSID);
-    switch (parsedEvent.eventType) {
-        case WEBHOOK_EVENT_TYPES.MESSAGE:
-            respondToMessageEvent(parsedEvent);
-            break;
-        case WEBHOOK_EVENT_TYPES.POSTBACK:
-            respondToPostbackEvent(parsedEvent);
-            break;
-        case WEBHOOK_EVENT_TYPES.REFERRAL:
-            respondToReferralEvent(parsedEvent);
-            break;
-    }
-};
+
 ```
 
 Now, we will be going to handle the 2 easy scenarios, the postback reply, and the referral reply. For the postback, I will reply with a message indicating that post back received with payload X, let's say that it will be something like
