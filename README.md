@@ -10,6 +10,8 @@ Hence you can consider this tutorial is **2 in 1** tutorial, from one side it is
 
 before going into the tutorial itself, make sure to follow read the following in order to proceed with setup and preparations.
 
+_p.s after being qualified to the final round for the Developer Circle Community Challenge, I have added few lessons on the native support of Wit.ai within the messenger platform, hence we can say that this tutorial is now a **3 in 1** tutorial 😁😎_
+
 ### License
 
 [![GitHub license](https://img.shields.io/github/license/Naereen/StrapDown.js.svg)](https://github.com/mohamedluay/Messenger_Platform_Tutorial_TDD)

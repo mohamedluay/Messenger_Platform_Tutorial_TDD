@@ -2,14 +2,14 @@
 
 ## Table Of Content
 
-1. [Introduction](#1-introduction)
-    - [1.1. Tutorial Introduction 👋](#11-tutorial-introduction)
-    - [1.2 Helicopter View 🚁](#12-helicopter-view)
-    - [1.3 The Anatomy Of A Lesson 💀](#13-the-anatomy-of-a-lesson)
-    - [1.4 Test Runner Script 👾](#14-test-runner-script)
-    - [1.5 Environment Variables](#15-environment-variables)
-2. [Tutorial Lessons](#2-usage-guide)
-3. [All tests went green, what's Next⁉️](#3-all-tests-went-green-whats-next)
+1. [Introduction](#1-introduction-)
+    - [1.1. Tutorial Introduction 👋](#11-tutorial-introduction-)
+    - [1.2 Helicopter View 🚁](#12-helicopter-view-)
+    - [1.3 The Anatomy Of A Lesson 💀](#13-the-anatomy-of-a-lesson-)
+    - [1.4 Test Runner Script 👾](#14-test-runner-script-)
+    - [1.5 Environment Variables](#15-environment-variables-)
+2. [Tutorial Lessons](#2-usage-guide-)
+3. [All tests went green, what's Next⁉️](#3-all-tests-went-green-whats-next-)
 
 ## 1. Introduction
 

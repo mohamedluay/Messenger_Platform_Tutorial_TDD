@@ -24,7 +24,7 @@ To integrate your wit.ai app into your Facebook app, do the following:
 
 **Intent:** It represents the user's intention from the message he sent, or the action he wanted to perform from that message. Using the same example in the previous sentence, then the user intent here is booking a table. Intents usually given a mix of a verb and a noun as a name, e.g: bookTable.
 
-Entity: An entity is anything that modifies an intent. Using the same example earlier, when the user says **"Book me a table for 4 tomorrow 3 PM"** then 4, tomorrow, 3PM are all considered entities that constitutes the intent. Entities could be something like **numberOfSeats**, **dateTime** ... etc
+**Entity:** An entity is anything that modifies an intent. Using the same example earlier, when the user says **"Book me a table for 4 tomorrow 3 PM"** then 4, tomorrow, 3PM are all considered entities that constitutes the intent. Entities could be something like **numberOfSeats**, **dateTime** ... etc
 
 ## Get Your Hands Dirty 👩‍💻
 
