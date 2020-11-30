@@ -98,6 +98,6 @@ Documentation Reference:
 
 -   [Setting Up Your Facebook App](https://developers.facebook.com/docs/messenger-platform/getting-started/app-setup/)
 
-## Next Lesson: [All tests went green, what's Next⁉️](https://github.com/mohamedluay/Messenger_Platform_Tutorial_TDD/tree/master/tutorials/english#3-all-tests-went-green-whats-next)
+## Next Lesson: [All tests went green, what's Next⁉️](https://github.com/mohamedluay/Messenger_Platform_Tutorial_TDD/blob/master/tutorials/english/README.md#3-all-tests-went-green-whats-next%EF%B8%8F)
 
 [<img src="https://img.shields.io/badge/@_mluay%20-%231DA1F2.svg?&style=for-the-badge&logo=Twitter&logoColor=white"/>](https://twitter.com/_mluay)
