@@ -39,6 +39,8 @@ else
         docker-compose run test node_modules/jest/bin/jest.js tests/4-7-sendingMediaTemplate.test.js --detectOpenHandles --forceExit
     elif [ "$cmd" = "lesson_5" ]; then 
         docker-compose run test node_modules/jest/bin/jest.js tests/5-superEchoChatbot.test.js --detectOpenHandles --forceExit
+    elif [ "$cmd" = "lesson_6" ]; then 
+        docker-compose run test node_modules/jest/bin/jest.js tests/6-builtInNLP.test.js --detectOpenHandles --forceExit
     elif [ "$cmd" = "all_lessons" ]; then 
         docker-compose run test node_modules/jest/bin/jest.js --detectOpenHandles --forceExit
     else

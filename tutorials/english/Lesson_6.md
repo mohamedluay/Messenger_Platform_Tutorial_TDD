@@ -5,14 +5,18 @@
 One of the coolest features that come in handy with the messenger platform is the Built-in NLP feature that you can optionally turn on from your Facebook Application.
 
 <p align="center">
-  <img src="https://scontent-hbe1-1.xx.fbcdn.net/v/t39.2365-6/31753097_2024429501209904_4428415022263173120_n.png?_nc_cat=111&ccb=2&_nc_sid=ad8a9d&_nc_ohc=1WSHGBW2AQYAX-Z0SYo&_nc_ht=scontent-hbe1-1.xx&oh=9b728ff27f979738e8eb49e9a7ad5561&oe=5FE8731C" />
+  <img src="https://github.com/mohamedluay/Messenger_Platform_Tutorial_TDD/blob/master/tutorials/english/images/Lesson_6_im1.png" />
 </p>
 
 The built-in NLP feature will automatically detect entities and intents for you, and will attach it every request message you receive on your chatbot. This will save you in terms of both latency and complexity requesting an external NLP API like Wit.ai or Dialogflow.
 
 By default, the built-in NLP feature, detects the 15 entities below. Keep in mind that Dates and times are automatically localized based on the locale sent in the user's profile. In other words, if the users sends you a message like "yesterday at 6 pm", you will get the actual timestamp with the message itself.
 
-By default, this feature supports 22 languages, these languages are:
+<p align="center">
+  <img src="https://github.com/mohamedluay/Messenger_Platform_Tutorial_TDD/blob/master/tutorials/english/images/Lesson_6_im2.png" />
+</p>
+
+This feature supports 22 languages, these languages are:
 (Arabic, Chinese, Croatian, Danish, Dutch, English, French, Georgian, German, Greek, Irish, Italian, Hebrew, Hungarian, Korean, Norwegian Bokmål, Polish, Portuguese, Romanian, Spanish, Swedish, and Vietnamese).
 
 For other languages, check [customizing NLP via wit.ai](https://developers.facebook.com/docs/messenger-platform/built-in-nlp/#customizing_nlp)
@@ -73,181 +77,90 @@ Every message that you will receive from any user through the platform would hav
 
 ## Get Your Hands Dirty 👩‍💻
 
-First of all look for our dedicated keyword 😁
+Coming to the practical side of things. By now you should have enabled the built-in NLP already from your Facebook Application and ready to consume the entities and traits you will be receiving from the platform.
+
+_p.s if you find entities as a terminology ambiguous to you, don't worry as we will cover that much more deeper in the next lesson 😉_
+
+Now you can go search for the keyword we usually look for 😁
 
 ```javascript
-// ToDo: Lesson_5
+// ToDo: Lesson_6
 ```
 
-Let's have a manager dedicated for handling these responses, will call it **responseHandlingManager.js**, in this file, we will be defining a **respondToMessage** function that will take the parsed webhook event and do the logic for each one of the 6 above scenarios. As starting point, If you remember when we implemented the webhook events parser, we managed to handle 3 main webhook events, these are:
-
-1.  Message Event.
-2.  Postback Event.
-3.  Referral Event.
-
-Hence, the first thing we will do in this **respondToMessage** function will be identifying the type of the webhook received, and then route it to a responding function.
-
-The second thing we will do in this function is sending 2 sender actions:
-
-1.  mark_seen to give the user feedback that the message was received successfully.
-2.  typing_on to give the user the notion that the reply is being processed and will be sent shortly.
-
-With all that being said, this function should look like this 👇
+Now, inside the **parseMessageEvent**, I will add two properties to the parsed object, one for the entities found in the message, and the other one for the traits. Keep in mind that we will implement the entities/traits extraction logic in a separate functions for more cleanses and better developer experience.
 
 ```javascript
-
-```
-
-Now, we will be going to handle the 2 easy scenarios, the postback reply, and the referral reply. For the postback, I will reply with a message indicating that post back received with payload X, let's say that it will be something like
-
-```
-Postback Received, payload => <USED_DEFINED_PAYLOAD>
-```
-
-Hence, will write a function that looks like this 👇. keep in mind that in real life scenarios, you will be having different quick replies with different responses hence it would be better if you serialize your reply as JSON object (It should be stringified) and use it here in your logic. Keep in mind that payload argument is limited to _1000 characters_.
-
-```javascript
-const respondToPostbackEvent = (parsedEvent) => {
-    sendTextMessage(
-        parsedEvent.userPSID,
-        `Postback Received, payload => ${parsedEvent.postback.payload}`
-    );
+const parseMessageEvent = (event) => {
+    // ToDo: Lesson 3_1
+    // ToDo: Lesson_6
+    return {
+        eventType: WEBHOOK_EVENT_TYPES.MESSAGE,
+        userPSID: event.sender.id,
+        userReference: event.sender.user_ref,
+        sendingPageID: event.recipient.id,
+        timestamp: event.timestamp,
+        isQuickReply: event.message.quick_reply != undefined,
+        isReplyToPreviousMessage: event.message.reply_to != undefined,
+        hasAttachments: event.message.attachments != undefined,
+        message: event.message,
+        entities: extractEntitiesFromMessageObject(event.message),
+        traits: extractTraitsFromMessageObject(event.message),
+    };
 };
 ```
 
-Coming to referrals part (my personal favorite due to ease of onboarding & re-engagement), as mentioned in **Lesson_3_3**, there is 5 different entry points when it comes to referrals. In this chatbot, I will only cover the m.me links (my personal favorite due to ease of onboarding & re-engagement). This event will be fired when the user visited the m.me url with your page name and a ref value of your preference, e.g:
-
-```
-http://m.me/<PAGE_NAME>?ref=<REF_PARAM>
-```
-
-In this cases, we will deal with it exactly like we have with the postback, where the ref is the <REF_PARAM> set in the url.
+For the **extractEntitiesFromMessageObject**, first of all we will check if the message object has entities included, if not we will return an empty array as by the end of the day not all message will have entities identified from it and we don't want our code to throw an exception every time it doesn't have an entities object. Otherwise, let's construct a new array structure for every entity that contains (entity name, value and confidence). Keep in mind that although this 3 properties doesn't cover all the options supported by Wit.ai, however, it does the job for most of the time, hence, if you find your application does require more details then implement them accordingly in this function.
 
 ```javascript
-const respondToReferralEvent = (parsedEvent) => {
-    sendTextMessage(
-        parsedEvent.userPSID,
-        `Referral Received, ref => ${parsedEvent.referral.ref}`
-    );
+const extractEntitiesFromMessageObject = (message) => {
+    // ToDo: Lesson_6
+    if (!message.entities) return [];
+    const entitiesNames = Object.keys(message.entities);
+    const entities = entitiesNames.map((entityName) => ({
+        name: entityName,
+        confidence: message.entities[entityName][0].confidence,
+        value: message.entities[entityName][0].value,
+    }));
+    return entities;
 };
 ```
 
-Now looking back at the rest of the 4 other cases that we are going to handle in this chatbot, the cases are:
-
-1.  User sends **quick_reply**.
-2.  User sends **generic**.
-3.  User sends **multiple_messages**.
-4.  Otherwise.
+The same is applicable to the **extractTraitsFromMessageObject** function
 
 ```javascript
-const respondToMessageEvent = (parsedEvent) => {
-    if (parsedEvent.message.text === 'quick_reply') {
-        sendMessageWithQuickReplyResponse(parsedEvent);
-    } else if (parsedEvent.message.text === 'generic') {
-        sendGenericTemplateResponse(parsedEvent);
-    } else if (parsedEvent.message.text === 'multiple_messages') {
-        sendMultipleTextMessages(parsedEvent.userPSID, [
-            'Hi there',
-            'How are you?',
-        ]);
-    } else sendTextMessage(parsedEvent.userPSID, parsedEvent.message.text);
+const extractTraitsFromMessageObject = (message) => {
+    // ToDo: Lesson_6
+    if (!message.traits) return [];
+    const traitNames = Object.keys(message.traits);
+    const traits = traitNames.map((traitName) => ({
+        name: traitName,
+        confidence: message.traits[traitName][0].confidence,
+        value: message.traits[traitName][0].value,
+    }));
+    return traits;
 };
 ```
 
-For the **multiple_messages** scenario, I will just use the **sendMultipleTextMessages** we implemented in **Lesson_4_2** by passing to it an array of messages that I want to send to the user for this flow.
-
-```
-['Hi there', 'How are you?']
-```
-
-For any other text message received, I will just echo it back to the sender as shown in the piece of code above.
-
-Finally, for the **quick_reply** & the **generic template** examples, I have just used a lorem ipsum templates to test the functionality, nothing more, definitely in real life cases, you would use them in a different manner in conjunction with the usability flow you are up to.
-
-```javascript
-const sendMessageWithQuickReplyResponse = (parsedEvent) => {
-    sendTextMessage(
-        parsedEvent.userPSID,
-        'You have asked for a quick replies example',
-        {
-            quickReplies: [
-                buildTextualQuickReply('quick reply example', '<QR_PAYLOAD>'),
-            ],
-        }
-    );
-};
-
-const sendGenericTemplateResponse = (parsedEvent) => {
-    const elements = [
-        buildGenericListElement('Title', {
-            subtitle: 'subtitle',
-            buttons: [
-                buildPostbackButton('another postback', '<ANOTHER_PAYLOAD>'),
-            ],
-        }),
-    ];
-    sendGenericTemplate(parsedEvent.userPSID, elements);
-};
-```
-
-The last step would be invoking this **respondToMessage** function from the webhook code found in the **app.js** file.
-
-```javascript
-webhook.post('/webhook', (req, res) => {
-    // ToDo: Lesson_2
-    const data = req.body;
-    const { object, entry } = data;
-    if (object === 'page') {
-        entry.forEach((entryEvent) => {
-            try {
-                const webhookEvent = entryEvent.messaging[0];
-                const { sender, recipient, timestamp } = webhookEvent;
-                // ToDo: Lesson_3
-                const parsedEvent = parseEvent(webhookEvent);
-                // ToDo: Lesson_5
-                respondToMessage(parsedEvent);
-                res.status(200).send('EVENT_RECEIVED');
-            } catch (error) {
-                res.status(500).send();
-            }
-        });
-    } else {
-        res.sendStatus(404);
-    }
-});
-```
-
-Now, we have made it to the last green check in this tutorial 👏, we have wrote our last piece of code here, let's check if it is turned green.
+Let's run this lesson tests to check if it passes yet 🤓.
 
 ```sh
-./scripts/start_tutorial.sh lesson_5
+./scripts/start_tutorial.sh lesson_6
 ```
 
-And we are done with the whole tutorial and the the the technical part 😁🕺.
-
-For the sense of achievement, I have made a command that runs all tests togetherL
-
-```sh
-./scripts/start_tutorial.sh all_lessons
-```
+Hooray 🎊 🎉
 
 <p align="center">
-  <img src="https://github.com/mohamedluay/Messenger_Platform_Tutorial_TDD/blob/master/tutorials/english/images/lesson_5_im1.png" />
+  <img src="https://media.giphy.com/media/w8No4F78DXxBSBQoRt/giphy.gif" />
 </p>
 
-If you reached it this far, please let me know by tweeting it [from here](https://twitter.com/intent/tweet?text=Hi%20@_mluay,%20I%20have%20completed%20the%20Messenger%20Platform%20Tutorial,%20check%20my%20tests%20%F0%9F%98%81%F0%9F%91%87) 🙏
-.
-
-<p align="center">
-  <img src="https://media.giphy.com/media/vmon3eAOp1WfK/giphy.gif" />
-</p>
+In the next lesson, we will learn how to use Wit.ai to further customize the NLP feature and use it for more extensible application.
 
 ## Citation
 
 Documentation Reference:
 
--   [Using m.me Links](https://developers.facebook.com/docs/messenger-platform/discovery/m-me-links/)
+-   [Built-in NLP](https://developers.facebook.com/docs/messenger-platform/built-in-nlp/)
 
-## Next Lesson: [All tests went green, what's Next⁉️](https://github.com/mohamedluay/Messenger_Platform_Tutorial_TDD/tree/master/tutorials/english#3-all-tests-went-green-whats-next)
+## Next Lesson: [Lesson 7 - Native Wit.ai Support](https://github.com/mohamedluay/Messenger_Platform_Tutorial_TDD/blob/master/tutorials/english/Lesson_7.md)
 
 [<img src="https://img.shields.io/badge/@_mluay%20-%231DA1F2.svg?&style=for-the-badge&logo=Twitter&logoColor=white"/>](https://twitter.com/_mluay)
