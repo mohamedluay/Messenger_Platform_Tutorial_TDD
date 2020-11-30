@@ -19,7 +19,7 @@ By default, the built-in NLP feature, detects the 15 entities below. Keep in min
 This feature supports 22 languages, these languages are:
 (Arabic, Chinese, Croatian, Danish, Dutch, English, French, Georgian, German, Greek, Irish, Italian, Hebrew, Hungarian, Korean, Norwegian Bokmål, Polish, Portuguese, Romanian, Spanish, Swedish, and Vietnamese).
 
-For other languages, check [customizing NLP via wit.ai](https://developers.facebook.com/docs/messenger-platform/built-in-nlp/#customizing_nlp)
+_p.s gor other languages, or to customize wit.ai to support more functionality, we will cover that in the next lesson._
 
 So the question now would be now, how would I receive the fetched entities for any message request?
 As a short answer, once you enable the built-in NLP feature as shown above 👆, you will start receiving an object named **entities** within the typical message webhook we discussed in **lesson 3.1**. For example, if the user send you a message like **"see you tomorrow at 4pm"**, then you would receive an object that will look something like this:
