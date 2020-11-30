@@ -8,7 +8,6 @@
     - [1.3 The Anatomy Of A Lesson 💀](#13-the-anatomy-of-a-lesson)
     - [1.4 Test Runner Script 👾](#14-test-runner-script)
     - [1.5 Environment Variables](#15-environment-variables)
-    - [1.6 Setup your Facebook App](#16-setup-your-facebook-app)
 2. [Tutorial Lessons](#2-usage-guide)
 3. [All tests went green, what's Next⁉️](#3-all-tests-went-green-whats-next)
 
@@ -84,12 +83,6 @@ An access token that will be generated for you during facebook app configuration
 
 The graph API that you will use in order to send messages from your application to your page's users, keep in mind that I am using version **8.0**
 
-### **1.6 Setup your Facebook App**
-
-You can follow [this link](https://developers.facebook.com/docs/messenger-platform/getting-started/app-setup) from the **official platform documentation** to have your app ready. However, you won't need this setup on order to follow up with this tutorial as all the lessons been prepared inside a testing environment.
-
-Never the less, you will still need to do this step when you start publishing your chatbot on the platform and assign page to it.
-
 ## 2. Tutorial Lessons
 
 -   [Lesson 1 - Verification Webhook 👮‍♂️](Lesson_1.md)
@@ -109,6 +102,9 @@ Never the less, you will still need to do this step when you start publishing yo
     -   [Lesson 4.7 - Sending Media Template](Lesson_4_7.md)
     -   [Lesson 4.8 - Sending Messages Appendix](Lesson_4_8.md)
 -   [Lesson 5 - Build your Super Echo Chatbot 💬🤖](Lesson_5.md)
+-   [Lesson 6 - BuiltIn NLP](Lesson_6.md)
+-   [Lesson 7 - Native Wit.ai Support](Lesson_7.md)
+-   [Lesson Appendix - Setting Up Your Facebook APP](Lesson_A.md)
 
 ## 3. All tests went green, what's Next⁉️
 

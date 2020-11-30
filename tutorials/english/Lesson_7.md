@@ -15,7 +15,7 @@ To integrate your wit.ai app into your Facebook app, do the following:
 3- Add your Wit Server access token. You can find your access token in the Wit App settings.
 
 <p align="center">
-  <img src="https://github.com/mohamedluay/Messenger_Platform_Tutorial_TDD/blob/master/tutorials/english/images/Lesson_7_im1.png" />
+  <img src="https://github.com/mohamedluay/Messenger_Platform_Tutorial_TDD/blob/master/tutorials/english/images/lesson_7_im1.png" />
 </p>
 
 ### Understanding The Difference Between Utterances, Intents & Entities
@@ -133,6 +133,6 @@ Documentation Reference:
 -   [Chatbot Vocabulary: 10 Chatbot Terms You Need to Know](https://tangowork.com/chatbot-vocabulary/)
 -   [Messenger Platform - Customizing NLP via Wit.ai](https://developers.facebook.com/docs/messenger-platform/built-in-nlp/#customizing_nlp)
 
-## Next Lesson: [ Lesson Appendix - Setting Up Your Facebook APP](https://github.com/mohamedluay/Messenger_Platform_Tutorial_TDD/tree/master/tutorials/english#3-all-tests-went-green-whats-next)
+## Next Lesson: [ Lesson Appendix - Setting Up Your Facebook APP](https://github.com/mohamedluay/Messenger_Platform_Tutorial_TDD/blob/master/tutorials/english/Lesson_A.md)
 
 [<img src="https://img.shields.io/badge/@_mluay%20-%231DA1F2.svg?&style=for-the-badge&logo=Twitter&logoColor=white"/>](https://twitter.com/_mluay)
