@@ -5,7 +5,7 @@
 One of the coolest features that come in handy with the messenger platform is the Built-in NLP feature that you can optionally turn on from your Facebook Application.
 
 <p align="center">
-  <img src="https://github.com/mohamedluay/Messenger_Platform_Tutorial_TDD/blob/master/tutorials/english/images/Lesson_6_im1.png" />
+  <img src="https://github.com/mohamedluay/Messenger_Platform_Tutorial_TDD/blob/master/tutorials/english/images/lesson_6_im1.png" />
 </p>
 
 The built-in NLP feature will automatically detect entities and intents for you, and will attach it every request message you receive on your chatbot. This will save you in terms of both latency and complexity requesting an external NLP API like Wit.ai or Dialogflow.
@@ -13,7 +13,7 @@ The built-in NLP feature will automatically detect entities and intents for you,
 By default, the built-in NLP feature, detects the 15 entities below. Keep in mind that Dates and times are automatically localized based on the locale sent in the user's profile. In other words, if the users sends you a message like "yesterday at 6 pm", you will get the actual timestamp with the message itself.
 
 <p align="center">
-  <img src="https://github.com/mohamedluay/Messenger_Platform_Tutorial_TDD/blob/master/tutorials/english/images/Lesson_6_im2.png" />
+  <img src="https://github.com/mohamedluay/Messenger_Platform_Tutorial_TDD/blob/master/tutorials/english/images/lesson_6_im2.png" />
 </p>
 
 This feature supports 22 languages, these languages are:
