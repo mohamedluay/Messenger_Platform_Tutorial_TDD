@@ -175,26 +175,11 @@ webhook.post('/webhook', (req, res) => {
 });
 ```
 
-Now, we have made it to the last green check in this tutorial 👏, we have wrote our last piece of code here, let's check if it is turned green.
+Let's run the tests of this lesson now
 
 ```sh
 ./scripts/start_tutorial.sh lesson_5
 ```
-
-And we are done with the whole tutorial and the the the technical part 😁🕺.
-
-For the sense of achievement, I have made a command that runs all tests togetherL
-
-```sh
-./scripts/start_tutorial.sh all_lessons
-```
-
-<p align="center">
-  <img src="https://github.com/mohamedluay/Messenger_Platform_Tutorial_TDD/blob/master/tutorials/english/images/lesson_5_im1.png" />
-</p>
-
-If you reached it this far, please let me know by tweeting it [from here](https://twitter.com/intent/tweet?text=Hi%20@_mluay,%20I%20have%20completed%20the%20Messenger%20Platform%20Tutorial,%20check%20my%20tests%20%F0%9F%98%81%F0%9F%91%87) 🙏
-.
 
 <p align="center">
   <img src="https://media.giphy.com/media/vmon3eAOp1WfK/giphy.gif" />
@@ -206,6 +191,6 @@ Documentation Reference:
 
 -   [Using m.me Links](https://developers.facebook.com/docs/messenger-platform/discovery/m-me-links/)
 
-## Next Lesson: [All tests went green, what's Next⁉️](https://github.com/mohamedluay/Messenger_Platform_Tutorial_TDD/tree/master/tutorials/english#3-all-tests-went-green-whats-next)
+## Next Lesson: [Lesson 6 - BuiltIn NLP](https://github.com/mohamedluay/Messenger_Platform_Tutorial_TDD/blob/master/tutorials/english/Lesson_6.md)
 
 [<img src="https://img.shields.io/badge/@_mluay%20-%231DA1F2.svg?&style=for-the-badge&logo=Twitter&logoColor=white"/>](https://twitter.com/_mluay)

@@ -141,7 +141,7 @@ const extractTraitsFromMessageObject = (message) => {
 };
 ```
 
-Let's run this lesson tests to check if it passes yet 🤓.
+Now, we have made it to the last green check in this tutorial 👏, we have wrote our last piece of code here, let's check if it is turned green.
 
 ```sh
 ./scripts/start_tutorial.sh lesson_6
